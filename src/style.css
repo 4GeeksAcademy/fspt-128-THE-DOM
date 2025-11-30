@@ -1,5 +1,42 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+    margin: 0;
+    padding: 40px;
+    transition: background 0.6s, color 0.6s;
+    min-height: 100vh;
+}
+
+/* Fondo del mundo real */
+body.real {
+    background-image: url("https://images.squarespace-cdn.com/content/v1/54612caee4b0e58fabd96218/1486773511811-DCL01UFSLJ4SMD3OF4I7/generalstore");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f2f2f2;
+}
+
+/* Fondo upside down */
+body.upside-down {
+    background-image: url("https://storage.googleapis.com/rodeofx-webpage-videos/project/images/203-Stranger-Things-4/stranger-things-season4-404147.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f2f2f2;
+    filter: grayscale(35%);
+}
+
+.stranger-card{
+     background: rgba(0, 0, 0, 0.55);
+}
+
+.glitch-hint {
+  cursor: pointer;
+  animation: glitch 0.8s infinite;
+}
+
+@keyframes glitch {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.4; transform: scale(1.02); }
+  100% { opacity: 1; }
 }
